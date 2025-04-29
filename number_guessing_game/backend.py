@@ -1,11 +1,5 @@
 import random
 
-def playagain():
-    print("Would you like to play again?")
-    pa_input = input("Enter Y/N: ").upper()
-    if pa_input == Y:
-        print("Choice accepted")
-
 def game_rules():
     print ("1. Easy (10 chances)")
     print ("2. Medium (5 chances)")
