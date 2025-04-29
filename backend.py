@@ -1,19 +1,20 @@
 import random
 
 print ("""Welcome to the Number Guessing Game!
-       I'm thinking of a number between 1 and 100.
-You have 5 chances to guess the correct number.""")
+       I'm thinking of a number between 1 and 100.""")
 
 def game_rules():
-    None
+    optionselect = input("""Please select the difficulty level:
+1. Easy (10 chances)
+2. Medium (5 chances)
+3. Hard (3 chances)""").upper()
+    if input == "EASY":
+        print("Great! You have selected the Easy difficulty level.")
+        print("Let's start the game!")
+        menueasy()
 
-def menu1():
+
+def menueasy():
     for i in range(10):
         number = random.randint(1, 100)
         userinput = ("Please enter a number to guess: ")
-
-menuchoice = input("Enter your choice: ")
-if menuchoice == 1:
-    print("Great! You have selected the Easy difficulty level.")
-    print("Let's start the game!")
-    menu1()
